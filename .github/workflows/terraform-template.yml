@@ -40,7 +40,8 @@ jobs:
               working-directory: ./env
 
             - name: Terraform Apply
-              run: terraform apply
+              run: terraform apply -var-file=dev.tfvars
+              working-directory: ./env
 
             
  
