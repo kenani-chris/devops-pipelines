@@ -38,6 +38,11 @@ jobs:
             - name: Terraform Plan
               run: terraform plan -var-file=dev.tfvars
               working-directory: ./env
+
+            - name: Terraform Apply
+              run: terraform apply
+
+            
  
  
  
